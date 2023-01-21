@@ -8,19 +8,27 @@
   <script src="https://kit.fontawesome.com/3b9cd09213.js" crossorigin="anonymous"></script>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link rel="stylesheet" scr="/style.css" />
+  <link rel="stylesheet" href="/style.css">
   <title>Document</title>
 </head>
-
 <body>
-  <nav class="menu">
-    <h1>My Library</h1>
-    <i class="fa-solid fa-magnifying-glass"></i>
-    <div class="log">
-      <i class="fa-solid fa-user"></i>
-      <h2>Login</h2>
-    </div>
-  </nav>
+    <header>
+      <h1>My Library</h1>
+      <form>
+        <div class="search-container">
+          <i class="fa fa-search"></i>
+          <input type="text" placeholder="Search.." name="search">
+        </div>
+      </form>
+      <button class="log">
+        <i class="fa-solid fa-user">
+        </i><h2>Login</h2>
+      </button>
+    </header>
+    <section class="container">
+      <div class="add-button">
+        <button class="button-add">Add new Book</button>
+      </div>
+    </section>
 </body>
-
 </html>
