@@ -29,11 +29,14 @@ h1 {
   font-size: 50px;
 }
 
-.log {
-  display: flex;
-  flex-direction: row;
+.log, .log:hover {
   margin-right: 40px;
-  margin-top: 5px;
+  border: 1px solid white;
+  border-radius: 8px;
+  width: 100px;
+  height: 50px;
+  background-color: salmon;
+  cursor: pointer;
 }
 
 button {
@@ -77,7 +80,7 @@ header i {
 .container {
   position: absolute;
   top: 140px;  
-  left: 20px;
+  left: 150px;
   border-bottom: 1px solid black;
   padding-bottom: 10px;
 }
@@ -115,7 +118,8 @@ header i {
 }
 
 .display_card {
-  display: flex;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
   position: absolute;
   top: 340px;
   left: 20px;
@@ -148,20 +152,24 @@ header i {
   align-items: center;
 }
 
-.author {
-}
-
 .num {
   color: rgb(49, 45, 45);
 }
 
-.date {
-}
-
 .state {
   display: flex;
-  justify-content: center;
+  justify-content: baseline;
   align-items: center;
+}
+
+.state img {
+  position: relative;
+  top: 10px;
+}
+
+.state img:hover {
+  transform: scale(1.1);
+  cursor: pointer;
 }
 
 .remove {
@@ -171,4 +179,90 @@ header i {
   width: 150px;
   height: 30px;
   margin: 10px;
+}
+
+.remove:hover {
+  background-color: rgb(248, 8, 56);
+  cursor: pointer;
+}
+
+.popup {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.popup form {
+  position: absolute;
+  top: 320px;
+  left: 560px;
+  transform: translate(-50%, -50%);
+  width: 350px;
+  height: 530px;
+  background-color: white;
+  border-radius: 10px;
+  padding: 20px;
+  font-size: 30px;
+}
+
+::placeholder {
+  font-size: 17px;
+}
+
+form h2 {
+  margin-top: 10px;
+  margin-bottom: 35px;
+}
+
+form input {
+  width: 150px;
+  height: 30px;
+  margin: 10px;
+  border: 1px solid black;
+  border-radius: 5px;
+  padding: 5px;
+}
+
+#status {
+  width: 100px;
+  height: 40px;
+  margin: 10px;
+  border: 1px solid black;
+  border-radius: 5px;
+  padding: 5px;
+}
+
+form button {
+  width: 120px;
+  height: 50px;
+  margin: 10px;
+  border: 1px solid black;
+  border-radius: 5px;
+  padding: 5px;
+}
+
+.add {
+  background-color: rgb(137, 247, 137);
+}
+
+.add:hover {
+  cursor: pointer;
+  transform: scale(1.1);
+}
+
+.add:active {
+  background-color: rgb(25, 218, 25);
+}
+
+.cancel {
+  background-color: rgb(247, 137, 137);
+
+}
+
+.cancel:active {
+  background-color: rgb(211, 52, 52);
+  cursor: pointer;
 }
