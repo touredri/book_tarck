@@ -14,19 +14,17 @@
 <body>
     <header>
       <h1>My Library</h1>
-      <form>
         <div class="search-container">
           <i class="fa fa-search"></i>
           <input type="text" placeholder="Search.." name="search">
         </div>
-      </form>
       <button class="log">
         <h2>Login</h2>
       </button>
     </header>
     <section class="container">
       <div class="add_button">
-        <button class="add_book">Add new Book</button>
+        <button class="add_book" id="add_book">Add new Book</button>
         <p>"The more that you read, the more things you will know. The more that you learn, the more places you'll go." Dr. Seuss' book "I Can Read With My Eyes Shut!"</p>
       </div>
     </section>
@@ -52,9 +50,8 @@
         <button class="remove item">Remove</button>
       </div>
     </section>
-    <section class="popup">
+    <section class="popup" id="popup">
       <div class="popup_content">
-        
         <form><h2>Add new Book</h2>
           <div class="form">
             <label for="title">Title</label>
