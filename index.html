@@ -1,23 +1,25 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <script src="https://kit.fontawesome.com/3b9cd09213.js" crossorigin="anonymous"></script>
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link rel="stylesheet" href="/style.css">
-  <title>Document</title>
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script
+      src="https://kit.fontawesome.com/3b9cd09213.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="stylesheet" href="/style.css" />
+    <title>book Track</title>
+  </head>
+  <body>
     <header>
       <h1>My Library</h1>
-        <div class="search-container">
-          <i class="fa fa-search"></i>
-          <input type="text" placeholder="Search.." name="search">
-        </div>
+      <div class="search-container">
+        <i class="fa fa-search"></i>
+        <input type="text" placeholder="Search.." name="search" />
+      </div>
       <button class="log">
         <h2>Login</h2>
       </button>
@@ -25,49 +27,70 @@
     <section class="container">
       <div class="add_button">
         <button class="add_book" id="add_book">Add new Book</button>
-        <p>"The more that you read, the more things you will know. The more that you learn, the more places you'll go." Dr. Seuss' book "I Can Read With My Eyes Shut!"</p>
+        <p>
+          "The more that you read, the more things you will know. The more that
+          you learn, the more places you'll go." Dr. Seuss' book "I Can Read
+          With My Eyes Shut!"
+        </p>
       </div>
     </section>
     <section class="display_card">
       <div class="card">
         <h3 class="title item">Titre</h3>
         <p class="author item">Author</p>
-        <p class="num item">Pages: <span class="all"></span> Lu:<span class="lu"></span></p>
+        <p class="num item">
+          Pages: <span class="all"></span> Lu:<span class="lu"></span>
+        </p>
         <p class="date item">2014-11-06</p>
         <button class="state">
-          <p class="status item">status <img src="/check_box_outline_blank_FILL0_wght400_GRAD0_opsz48.png" alt=""></p>
-        </button> 
+          <p class="status item">
+            status
+            <img
+              src="/check_box_outline_blank_FILL0_wght400_GRAD0_opsz48.png"
+              alt=""
+            />
+          </p>
+        </button>
         <button class="remove item">Remove</button>
       </div>
       <div class="card">
         <h3 class="title item">Titre</h3>
         <p class="author item">Author</p>
-        <p class="num item">Pages: <span class="all"></span> Lu:<span class="lu"></span></p>
+        <p class="num item">
+          Pages: <span class="all"></span> Lu:<span class="lu"></span>
+        </p>
         <p class="date item">2014-11-06</p>
         <button class="state">
-          <p class="status item">status <img src="/check_box_outline_blank_FILL0_wght400_GRAD0_opsz48.png" alt=""></p>
-        </button> 
+          <p class="status item">
+            status
+            <img
+              src="/check_box_outline_blank_FILL0_wght400_GRAD0_opsz48.png"
+              alt=""
+            />
+          </p>
+        </button>
         <button class="remove item">Remove</button>
       </div>
     </section>
     <section class="popup" id="popup">
       <div class="popup_content">
-        <form><h2>Add new Book</h2>
+        <form>
+          <h2>Add new Book</h2>
           <div class="form">
             <label for="title">Title</label>
-            <input type="text" id="title" name="title" placeholder="Title">
+            <input type="text" id="title" name="title" placeholder="Title" />
           </div>
           <div class="form">
             <label for="author">Author</label>
-            <input type="text" id="author" name="author" placeholder="Author">
+            <input type="text" id="author" name="author" placeholder="Author" />
           </div>
           <div class="form">
             <label for="pages">Pages</label>
-            <input type="number" id="pages" name="pages" placeholder="Pages">
+            <input type="number" id="pages" name="pages" placeholder="Pages" />
           </div>
           <div class="form">
             <label for="date">Date</label>
-            <input type="date" id="date" name="date" placeholder="Date">
+            <input type="date" id="date" name="date" placeholder="Date" />
           </div>
           <div class="form">
             <label for="status">Status</label>
@@ -78,7 +101,7 @@
           </div>
           <div class="form">
             <label for="lu">Pages read</label>
-            <input type="number" id="lu" name="lu" placeholder="Pages read">
+            <input type="number" id="lu" name="lu" placeholder="Pages read" />
           </div>
           <div class="form">
             <button class="add">Add</button>
@@ -88,5 +111,5 @@
       </div>
     </section>
     <script src="/script.js"></script>
-</body>
+  </body>
 </html>
